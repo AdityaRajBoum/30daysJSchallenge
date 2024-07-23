@@ -6,25 +6,69 @@
     <title>Document</title>
 </head>
 <body>
+
+    
     <div class="heading">
     <img src="https://www.pexels.com/photo/man-with-backpack-walking-down-stairs-by-wall-17696222/" alt="image ">
 
         <h1 id="heading1">Hello World</h1>
     </div>
-    <div class="navbar">
+
+    
+    <div class="navbar"
+     onmouseover="changeBgColor()"
+     onmouseout="resetBgColor()">
         <ul id="navbar">
             <li>Home</li>
             <li>About</li>
             <li>Contact</li>
         </ul>
     </div>
+
+    
+    <p id="signIn">
+        hello click the button below to sign in 
+    </p>
+
+    
+   <div id="imgdiv" ondblclick="changevisibility()">
+     <img id="image" src="assets/img1.jpg" alt="image" width="200px"
+    >
+</div>
+
+<input type="text" id="input"
+placeholder="Comment on image here" 
+onkeydown="recordkey()">
+ <button id="submit" >Submit</button>
+   
     <div>
         <button id="btn"
         onclick="changetext()"
-        onmouseover="changeBorderColour()"
+    
         >change text</button>
     </div>
-    <script src="09-dom-manipulation.js"/>
+
+    <label for="mySelect">Choose an option:</label>
+    <select id="mySelect">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    <p id="selectedValue">Selected: None</p>
+
+    
+    <ul id="list">
+        <li>1 list</li>
+        <li>2 list</li>
+        <li>3 list</li>
+        <li>4 list</li>
+      </ul>
+  
+      <button id="addItemButton">Add list item</button>
+    </body>
+  
+
+    <script src="10-event-handling.js"/>
     
 </body>
 </html>
